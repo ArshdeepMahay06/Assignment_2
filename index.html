@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is My Assignment 2 and I am building a Pizza ordering Website">
+    <meta name="robots" content="noIndex,noFollow">
+    <title>Order Pizza</title>
+    <!-- Linking the CSS Document To the HTML -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Linking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header of the Website -->
+    <header>
+        <h1>Pizza Hott</h1>
+        <menu>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </menu>
+    </header>
+
+
+    <!-- Section to Something about the Company -->
+    <section>
+        <div>
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium mollitia libero tenetur nesciunt consequuntur est quos. Amet placeat tempore veritatis dolorem aliquam earum laboriosam vitae nostrum. Quisquam dolores ipsum, quidem incidunt ratione qui laudantium asperiores illum minima corrupti iure veniam pariatur. Dolores modi maxime, velit nulla similique cum error.</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <!-- The Main Section of the Website That will Include an Heading and the 3 photos -->
+    <section class="my-section">
+        <h2>Order Your Pizza</h2>
+        <div>
+            <img src="./img/pizza-photo-3.jpg" alt="Pizza 1 Photo">
+            <button>Click to order</button>
+        </div>
+        <div>
+            <img src="./img/pizza-photo-2.jpg" alt="Pizza 1 Photo">
+            <button>Click to order</button>
+        </div>
+        <div>
+            <img src="./img/pizza-photo-1.jpg" alt="Pizza 1 Photo">
+            <button>Click to order</button>
+        </div>
+    </section>
+
+    <!-- Form that will take the data form the user -->
+    <form action="something" method="post" enctype="multipart/form-data">
+        <div>
+            <!-- Pizza's Details -->
+        <div>
+        <label>Choose the Pizza</label><br>
+        <input type="radio" name="pizzaName" id="pizza1"><label for="pizza1"> Greek Pizza</label><br>
+        <input type="radio" name="pizzaName" id="pizza2"><label for="pizza2"> St louis Pizza</label><br>
+        <input type="radio" name="pizzaName" id="pizza3"><label for="pizza3"> New-York Style Pizza</label><br>
+        </div>
+        
+        <div>
+        <label for="quantity">Enter the Quantity of Pizza</label>
+        <input type="number" name="quantity" id="quantity"><br>
+        </div>
+
+        <div>
+            <label> Select the Toppings for the Pizza</label>
+            <input type="checkbox" name="toppings" id="t-1"> Onions
+            <input type="checkbox" name="toppings" id="t-2"> Extra Cheese
+            <input type="checkbox" name="toppings" id="t-3"> Mushrooms
+        </div>
+        </div>
+
+        <!-- Client's Information -->
+        <div>
+            <br>
+            <span>Your Information</span><br>
+            <div>
+            <label for="name">Enter your Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Your Name Here" required><br>
+            </div>
+
+            <div>
+            <label for="email">Enter your Email Address</label><br>
+            <input type="email" name="email" id="email" placeholder="Your Email Here" required><br>
+            </div>
+
+            <div>
+            <label for="m-no">Enter your mobile Number </label><br>
+            <input type="number" name="m-no" id="m-no" placeholder="Your Mobile Number Here" required><br>
+            </div>
+
+            <div>
+            <label for="address">Enter your Address</label><br>
+            <input type="text" name="address" id="address" placeholder="Your Address Here" required><br>
+            </div>
+        </div>
+        <!-- Button for the Submission of the Form -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+    <!-- The Footer section Containing the Copyrights and Adress of the Shop -->
+    <footer>
+        <div>
+            <p>Copyright @2024 , All rights Reserved</p>
+        </div>
+        <div>
+            <p>Location : 72 xyz street Barrie</p>
+        </div>
+    </footer>
+</body>
+</html>

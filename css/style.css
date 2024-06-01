@@ -1,0 +1,196 @@
+/*  CSS Portion of the Website */
+
+/* Giving a Color to the Body  */
+body{
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+/* Giving the Poppins font family to all the Headings */
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins",sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Giving Roboto Font family to all the rest of Contnet */
+
+p,a,li,figcaption,button{
+    font-family: "Roboto",sans-serif;
+    font-size: 1.2em;           /* Approximately Equal to 20 px*/
+}
+
+/* Now The main Layout */
+
+/* 
+    Colors Used
+        Yellow skin-> #FEFFD2
+        Light skin -> #FFEEA9
+        Skin       -> #FFBF78
+        Orange     -> #FF7D29
+*/
+
+/* Styling of header and the footer  */
+header , footer{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #ff7d29;
+}
+
+/* Styling of the Contents in the Header */
+header > h1{
+    cursor: pointer;
+    text-align: center;
+    color: #2121edb7;
+}
+
+header > menu > li{
+    display: inline;
+    margin-right: 5%;
+    text-decoration: none;
+}
+
+header > menu > li > a{
+    text-decoration: none;
+    color: #feffd2;
+}
+
+/* Styling of the First Section */
+section {
+    height: 100vh;
+    background-image: url("../img/big-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section div {
+    padding: 0;
+    color: #feffd2;
+    width: 40%;
+    height: auto;
+    padding-top: 25%;
+    padding-left: 60%;
+}
+
+section div button{
+    font-size: 2em;
+    font-weight: 700;
+    background-color: #2121edb7;
+    color: #ffbf78;
+    border: 0;
+    padding: 13px 18px;
+    border-radius: 20px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+/* the main Part of the Website  which is Second Section and will take the Information from the User*/
+
+section+section{
+    width: 100vw;
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "head head head"
+        "div1   div2   div3"
+    ;
+}
+
+section+section h2{
+    grid-area: head;
+    font-size: 7.1em;
+    padding-top: 2%;
+    color: blueviolet;
+    text-align: center;
+}
+
+section+section div{
+    height: auto;
+    width: 32vw;
+    padding: 0;
+}
+
+section+section button{
+    display: block;
+    height: 35px;
+    font-size: large;
+    background-color:#ffbf78;
+    color: #2b4871;
+    padding: 5px 10px;
+    margin: auto;
+
+
+}
+
+section+section div1{
+    grid-area: div1;
+}
+
+section+section div2{
+    grid-area: div2;
+}
+
+section+section div3{
+    grid-area: div3;
+}
+
+
+section+section div img{
+    height: 80%;
+    width: 90%;
+}
+
+/* Styling of the Form */
+
+form{
+    padding: 20px 150px;
+    background-color: rgba(197, 194, 194, 0.263)
+}
+
+form div{
+    margin: 20px 0px;
+}
+
+
+form div label,span{
+    font-size: larger;
+    margin-right: 12px;
+}
+
+form > div+div > div > label{
+    font-size: 1.3em;
+    padding: 3px;
+}
+
+form > div+div > div > input{
+    height: 30px;
+    width: 300px;
+    border: #f8f8f8;
+    text-align: center;
+}
+
+form > button{
+    margin-left: 100px;
+    font-weight: 600;
+    background-color: #ff7d29;
+    color: #2c00cd;
+    border: 2px solid gainsboro;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+/* CSS for the Footer Section */
+footer > div {
+    margin: auto;
+}
+
+footer > div > p{
+    color: #2b4871;
+    font-size: larger;
+    font-weight: 600;
+}
